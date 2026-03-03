@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Margaret Gitonga</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f1f5f9;
+}
+
+/* CARD */
+.card {
+    max-width: 420px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    overflow: hidden;
+}
+
+/* TOP COMPANY BACKGROUND */
+.header {
+    background: url("company-bg.jpg") center/cover no-repeat;
+    height: 160px;
+    position: relative;
+}
+
+/* dark overlay */
+.header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+}
+
+/* PROFILE IMAGE */
+.profile-wrapper {
+    text-align: center;
+    margin-top: -60px;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.name {
+    margin: 10px 0 5px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.role {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* BUTTONS */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.call {
+    background: #16a34a;
+}
+
+.email {
+    background: #2563eb;
+}
+
+/* INFO BOX */
+.info-box {
+    background: #f8fafc;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #334155;
+}
+
+.company {
+    font-weight: 600;
+}
+
+/* MOBILE POLISH */
+@media (max-width: 480px) {
+    .card {
+        margin: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- ✅ COMPANY BACKGROUND -->
+    <div class="header"></div>
+
+    <!-- ✅ PROFILE IMAGE -->
+    <div class="profile-wrapper">
+        <img src="profile.jpg" class="profile-img">
+    </div>
+
+    <!-- ✅ CONTENT -->
+    <div class="content">
+        <div class="name">Margaret Gitonga, MBA</div>
+        <div class="role">Partner / Lead Consultant (East Africa)</div>
+        <div class="role">Zurich | Frankfurt | Dubai | Nairobi</div>
+
+        <!-- ✅ ACTION BUTTONS -->
+        <div class="actions">
+            <a href="tel:+254722301118" class="btn call">📞 Call</a>
+            <a href="mailto:margaret.gitonga@leverage-experts.com" class="btn email">✉️ Email</a>
+        </div>
+
+        <!-- ✅ DETAILS -->
+        <div class="info-box">🌐 https://qrfy.com/</div>
+        <div class="info-box">📍 Park Suites 4th Floor, Nairobi</div>
+        <div class="info-box company">🏢 Leverage Experts East Africa LTD</div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Margaret Gitonga</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f1f5f9;
+}
+
+/* CARD */
+.card {
+    max-width: 420px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 2px solid #e2e8f0;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    overflow: hidden;
+}
+
+/* HEADER WITH COMPANY BACKGROUND */
+.header {
+    background: url("images/bgd.jpeg") center/cover no-repeat;
+    height: 160px;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+}
+
+/* PROFILE IMAGE */
+.profile-wrapper {
+    text-align: center;
+    margin-top: -60px;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.name {
+    margin: 10px 0 5px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.role {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* DETAIL BOXES */
+.details {
+    margin-top: 10px;
+}
+
+.detail-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f8fafc;
+    padding: 14px;
+    border-radius: 12px;
+    margin: 10px 0;
+    text-align: left;
+    border: 1.5px solid #cbd5e1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.text {
+    font-size: 14px;
+    color: #334155;
+}
+
+.label {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 2px;
+}
+
+.text a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .card {
+        margin: 10px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- COMPANY BACKGROUND -->
+    <div class="header"></div>
+
+    <!-- PROFILE IMAGE -->
+    <div class="profile-wrapper">
+        <img src="images/mbc.jpeg" class="profile-img" alt="Profile Photo">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <div class="name">Margaret Gitonga, MBA</div>
+        <div class="role">Partner / Lead Consultant (East Africa)</div>
+        <div class="role">Zurich | Frankfurt | Dubai | Nairobi</div>
+
+        <!-- BOXED DETAILS -->
+        <div class="details">
+
+            <div class="detail-box">
+                <div class="icon">📞</div>
+                <div class="text">
+                    <div class="label">Mobile</div>
+                    +254 722 301 118
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <div class="icon">✉️</div>
+                <div class="text">
+                    <div class="label">Email</div>
+                    margaret.gitonga@leverage-experts.com
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <div class="icon">🌐</div>
+                <div class="text">
+                    <div class="label">Website</div>
+                    <a href="https://qrfy.com/" target="_blank">qrfy.com</a>
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <div class="icon">📍</div>
+                <div class="text">
+                    <div class="label">Location</div>
+                    Park Suites 4th Floor, Nairobi
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <div class="icon">🏢</div>
+                <div class="text">
+                    <div class="label">Company</div>
+                    Leverage Experts East Africa LTD
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

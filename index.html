@@ -36,7 +36,7 @@ body {
 
 .profile-wrapper {
     text-align: center;
-    margin-top: -60px;
+    margin-top: -10px;
     position: relative;
     z-index: 2;
 }
@@ -100,6 +100,17 @@ body {
     text-decoration: none;
     font-weight: 600;
 }
+.location-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit;        /* Keeps the text color the same as before */
+    display: flex;         /* Maintains the layout of icon and text side-by-side */
+    align-items: center;
+    width: 100%;
+}
+
+.location-link:hover {
+    opacity: 0.8;          /* Gives a slight visual cue when hovering */
+}
 
 @media (max-width: 480px) {
     .card { margin: 10px; }
@@ -116,9 +127,10 @@ body {
     </div>
 
     <div class="content">
-        <div class="name">Margaret Gitonga, MBA</div>
-        <div class="role">Partner / Lead Consultant (East Africa)</div>
-        <div class="role">Zurich | Frankfurt | Dubai | Nairobi</div>
+        <div class="name">Margaret Gitonga, <small>(BCom MBA)</small></div>
+        <div class="role"><strong>Partner / Lead Consultant (East Africa)</strong></div>
+         <div class="role"><strong>Leverage Experts E.A</strong></div>
+        <div class="role"><strong>Zurich | Frankfurt | Dubai | Nairobi</strong></div>
 
         <div class="details">
             <div class="detail-box">
@@ -130,9 +142,15 @@ body {
             </div>
             <div class="detail-box">
                 <div class="icon">✉️</div>
-                <div class="text">
+                <!-- <div class="text">
                     <div class="label">Email</div>
                     margaret.gitonga@leverage-experts.com
+                </div> -->
+                <div class="text">
+                <div class="label">Email</div>
+                <a href="mailto:margaret.gitonga@leverage-experts.com" class="email-link">
+                    margaret.gitonga@leverage-experts.com
+                </a>
                 </div>
             </div>
             <div class="detail-box">
@@ -142,12 +160,24 @@ body {
                     <a href="https://qrfy.com/" target="_blank">qrfy.com</a>
                 </div>
             </div>
-            <div class="detail-box">
+            <!-- <div class="detail-box">
                 <div class="icon">📍</div>
                 <div class="text">
                     <div class="label">Location</div>
                     Park Suites 4th Floor, Nairobi
                 </div>
+            </div> -->
+
+                    <div class="detail-box">
+            <a href="https://www.google.com/maps/search/?api=1&query=Park+Suites+4th+Floor+Nairobi" target="_blank" class="location-link">
+                <div class="icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg" alt="Map" style="width: 20px; height: 20px;">
+                </div>
+                <div class="text">
+                    <div class="label">Location</div>
+                    Park Suites 4th Floor, Nairobi
+                </div>
+            </a>
             </div>
             <div class="detail-box">
                 <div class="icon">🏢</div>
